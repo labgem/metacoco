@@ -13,13 +13,10 @@ MetaCoco is a bash/python pipeline that creates a completion matrix of metabolic
 
 **Table of Contents**
 
-[TOCM]
-
-[TOC]
-
 #Availability
 
 This version is currently designed to run MetaCoCo on the inti server : https://inti.cnrgh.fr/
+
 A specific access is required.
 
 #Use
