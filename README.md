@@ -21,7 +21,7 @@ This version is currently designed to run MetaCoCo on a Linux cluster using the 
 [![](https://img.shields.io/badge/kofam_scan-1.3.0-brightgreen.svg)](https://github.com/takaram/kofam_scan) 
 [![](https://img.shields.io/badge/prodigal-2.6.3-brightgreen.svg)](https://github.com/hyattpd/Prodigal) 
 [![](https://img.shields.io/badge/biopython-1.78-brightgreen.svg)](https://github.com/biopython/biopython) 
-[![](https://img.shields.io/badge/Pathway%20Tools-27.0-brightgreen.svg)]([https://www.pathwaytools.com/](https://bioinformatics.ai.sri.com/ptools/)) 
+[![](https://img.shields.io/badge/Pathway%20Tools-27.0-brightgreen.svg)](https://bioinformatics.ai.sri.com/ptools/) 
 [![](https://img.shields.io/badge/%20PythonCyC-1.1-brightgreen.svg)](https://github.com/ecocyc/PythonCyc)
 
 **Usage**
