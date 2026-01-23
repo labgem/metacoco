@@ -3,25 +3,30 @@
 # Readme.md
 
 
-![](https://img.shields.io/badge/Pathway%20Tools-27.0-brightgreen.svg) ![](https://img.shields.io/badge/%20PythonCyC-1.1-brightgreen.svg)
-
-MetaCoco : METAbolism COmpletion for microbial COmmunities
+MetaCoco: METAbolism COmpletion for microbial COmmunities
 -------------
 
-MetaCoco is a bash/python pipeline that creates a completion matrix of metabolic pathways for one or many  bacterian genomes/metagenomes starting from fasta or gbk/gbff files.
+**MetaCoCo** is a Bash/Python pipeline that generates a completion matrix of
+[MetaCyc](https://metacyc.org/) metabolic pathways for one or multiple bacterial
+genomes or metagenomes, starting from FASTA files.
 
+The pipeline performs:
+- gene prediction using [Prodigal](https://github.com/hyattpd/Prodigal),
+- functional annotation with [KofamScan](https://github.com/takaram/kofam_scan),
+- metabolic pathway inference using
+  [Pathway Tools](https://bioinformatics.ai.sri.com/ptools/).
 
-**Availability**
+This version is currently designed to run MetaCoCo on a Linux cluster using the SLURM job scheduler and Environment Modules for managing the following software dependencies:
 
-This version is currently designed to run MetaCoCo on the inti server : https://inti.cnrgh.fr/
+[![](https://img.shields.io/badge/kofam_scan-1.3.0-brightgreen.svg)](https://github.com/takaram/kofam_scan) 
+[![](https://img.shields.io/badge/prodigal-2.6.3-brightgreen.svg)](https://github.com/hyattpd/Prodigal) 
+[![](https://img.shields.io/badge/biopython-1.78-brightgreen.svg)](https://github.com/biopython/biopython) 
+[![](https://img.shields.io/badge/Pathway%20Tools-27.0-brightgreen.svg)]([https://www.pathwaytools.com/](https://bioinformatics.ai.sri.com/ptools/)) 
+[![](https://img.shields.io/badge/%20PythonCyC-1.1-brightgreen.svg)](https://github.com/ecocyc/PythonCyc)
 
-A specific access is required.
+**Usage**
 
-**Use**
-
-*Run on inti*
-
-- Run the main script : 
+- Run the main script: 
 
 ```bash
 sbatch --array=0-N run_ptools_pipeline.sh -i GENOMES/ -o results -f metacoco_input.csv -t HIGH/MIDDLE/LOW
@@ -29,7 +34,7 @@ or
 sbatch --array=0-N run_ptools_pipeline.sh -i GENOMES/ -o results -f metacoco_input.csv -t HIGH/MIDDLE/LOW -p ANNOTATIONS/
 ```
 
-- Once it's done, please run :
+- Once it's done, please run:
 ```bash
 sbatch -c2 run_create_completion_matrix.sh -i results/ -l results/Shortname.txt
 ```
@@ -59,7 +64,7 @@ A optional argument -p allow to give your own annotations.
 
 Input files must have the exact same name as in the metacoco_input.csv and finished with _genomic.fna 
 
-**ATTENTION :**
+**WARNING**
 
 As Pathway Tools is very specific about names, please use only name in uppercase and without any other specific character
 
@@ -82,7 +87,7 @@ This is a tabulated file, with minimum informations as followed :
 
 **Output files**
 
-MetaCoCo is going to produce two types of completion matrix :
+MetaCoCo is going to produce two types of completion matrix:
 
 - Individual matrix for each genome
 
@@ -95,7 +100,7 @@ For more informations about the differents formats, please refer here : https://
 In your main folder you will find all the matrix in a csv tabulated format.
 
 
-Bibliography
+References
 ------------
 
 .. [Green2004] Green, M.L., Karp, P.D. A Bayesian method for identifying missing enzymes in predicted metabolic pathway databases. BMC Bioinformatics 5, 76 (2004). https://doi.org/10.1186/1471-2105-5-76
@@ -108,7 +113,11 @@ Bibliography
 
 .. [PathwayToolsarXiv] Karp, P. D., Paley, S. M., Midford, P. E., Krummenacker, M., Billington, R., Kothari, A., Ong, W. K., Subhraveti, P., Keseler, I. M. & Caspi R. Pathway Tools: Integrated Software for Pathway/Genome Informatics and Systems Biology. arXiv. https://arxiv.org/abs/1510.03964
 
+.. [Hyatt2010] Hyatt, D., Chen, G.-L., Locascio, P. F., Land, M. L., Larimer, F. W. & Hauser, L. J. Prodigal: prokaryotic gene recognition and translation initiation site identification. *BMC Bioinformatics* 11, 119 (2010). https://doi.org/10.1186/1471-2105-11-119
+
+.. [Aramaki2020] Aramaki, T., Blanc-Mathieu, R., Endo, H., Ohkubo, K., Kanehisa, M., Goto, S. & Ogata, H. KofamKOALA: KEGG Ortholog assignment based on profile HMM and adaptive score threshold. *Bioinformatics* 36(7), 2251–2252 (2020). https://doi.org/10.1093/bioinformatics/btz859
+
 License
 -------
 
-This package is licensed under the GNU LGPL-3.0-or-later
+This software is licensed under the GNU LGPL-3.0-or-later
