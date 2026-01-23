@@ -115,4 +115,5 @@ Nucleic Acids Res48(D1):D445-D453 (2020). https://doi.org/10.1093/nar/gkz862
 License
 -------
 
-This software is licensed under the GNU LGPL-3.0-or-later
+This software is licensed under the GNU Lesser General Public License v3.0
+
