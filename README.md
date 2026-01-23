@@ -95,7 +95,7 @@ MetaCoCo is going to produce two types of completion matrix:
 
 In the results/ folder you will find the raw results of Pathologic/Pathway Tools.
 
-For more informations about the differents formats, please refer here : https://bioinformatics.ai.sri.com/ptools/flatfile-format.html
+For more informations about the differents formats, please refer here: https://bioinformatics.ai.sri.com/ptools/flatfile-format.html
 
 In your main folder you will find all the matrix in a csv tabulated format.
 
@@ -103,19 +103,14 @@ In your main folder you will find all the matrix in a csv tabulated format.
 References
 ------------
 
-.. [Green2004] Green, M.L., Karp, P.D. A Bayesian method for identifying missing enzymes in predicted metabolic pathway databases. BMC Bioinformatics 5, 76 (2004). https://doi.org/10.1186/1471-2105-5-76
-
-.. [Karp2011] Karp, P. D., Latendresse, M., & Caspi, R. The pathway tools pathway prediction algorithm. Standards in genomic sciences 5(3), 424–429 (2011). https://doi.org/10.4056/sigs.1794338
-
-.. [Karp2018] Karp, P. D., Weaver, D. & Latendresse, M. How accurate is automated gap filling of metabolic models?. BMC Systems Biology 12(1), 73 (2018). https://doi.org/10.1186/s12918-018-0593-7
-
-.. [Karp2019arXiv] Karp, P. D., Paley, S. M., Midford, P. E., Krummenacker, M., Billington, R., Kothari, A., Ong, W. K., Subhraveti, P., Keseler, I. M. & Caspi R. Pathway Tools version 23.0: Integrated Software for Pathway/Genome Informatics and Systems Biology. arXiv (2019). https://arxiv.org/abs/1510.03964v3
-
-.. [PathwayToolsarXiv] Karp, P. D., Paley, S. M., Midford, P. E., Krummenacker, M., Billington, R., Kothari, A., Ong, W. K., Subhraveti, P., Keseler, I. M. & Caspi R. Pathway Tools: Integrated Software for Pathway/Genome Informatics and Systems Biology. arXiv. https://arxiv.org/abs/1510.03964
-
 .. [Hyatt2010] Hyatt, D., Chen, G.-L., Locascio, P. F., Land, M. L., Larimer, F. W. & Hauser, L. J. Prodigal: prokaryotic gene recognition and translation initiation site identification. *BMC Bioinformatics* 11, 119 (2010). https://doi.org/10.1186/1471-2105-11-119
 
 .. [Aramaki2020] Aramaki, T., Blanc-Mathieu, R., Endo, H., Ohkubo, K., Kanehisa, M., Goto, S. & Ogata, H. KofamKOALA: KEGG Ortholog assignment based on profile HMM and adaptive score threshold. *Bioinformatics* 36(7), 2251–2252 (2020). https://doi.org/10.1093/bioinformatics/btz859
+
+... [MetaCyc20] R.Caspi, R.Billington, I.M. Keseler, A.Kothari, M.Krummenacker, P.E.Midford, W.K. Ong, S.Paley, P.Subhraveti, P.D. Karp The MetaCyc database of metabolic pathways and enzymes - a 2019 update
+Nucleic Acids Res48(D1):D445-D453 (2020). https://doi.org/10.1093/nar/gkz862
+
+.. [PTools24] Karp, P. D., Paley, S. M., Midford, P. E., Krummenacker, M., Billington, R., Kothari, A., Ong, W. K., Subhraveti, P., Keseler, I. M. & Caspi R. Pathway Tools version 28.0: Integrated Software for Pathway/Genome Informatics and Systems Biology. arXiv (2024). https://doi.org/10.48550/arXiv.1510.03964
 
 License
 -------
