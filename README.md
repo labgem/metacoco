@@ -6,7 +6,7 @@
 MetaCoco: METAbolism COmpletion for microbial COmmunities
 -------------
 
-**MetaCoCo** is a Bash/Python pipeline that generates a completion matrix of
+**MetaCoco** is a Bash/Python pipeline that generates a completion matrix of
 [MetaCyc](https://metacyc.org/) metabolic pathways for one or multiple bacterial
 genomes or metagenomes, starting from FASTA files.
 
